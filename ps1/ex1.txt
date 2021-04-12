@@ -1,0 +1,22 @@
+1. What is the hostname of the computer as reported by your Linux environment? (You will need to find the right Linux command to execute for this. I suggest searching the web.)
+The command to call the hostname of the computer is "hostname".  The hostname of my Linux environment is swz@ASR-128JQV2. 
+
+2. How would you specify the name of an output file when you use the compiler if you wanted the executable to have a name other than a.out?
+For the executable to have a name other than a.out, the -o option for clang may be used. 
+c++ -o <desired name to use for excusion> <nam.e of the file>. For my sin6pi.cpp, I used this command "c++ -o solo sin6pi.cpp" and then was able to execute by using "./solo".
+
+3. What happens if you type $ a.out instead of $ ./a.out to run your program? What is the difference (operationally) between the two statements?
+When typing $ a.out instead of $ ./a.out, the following bash prints out: a.out: command not found. The difference between the two statements is that one has the "./" command. 
+The "./a.out" statement executes the current directory program. 
+
+4. What does clang print when you run $ c++ --version (AL: note two dashes.)
+The following gets printed when "c++ --version" is ran:
+clang version 10.0.0-4ubuntu1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+"C++ --version" prints the compiler version, the complier's target, the thread model and the location of the installed directory.
+
+5. In the example program, the i and N variables are said to be size_t. What is a size_t?
+Size_t is a data type of variable N. In the code when I hover over the size_t command, I get the following: "typedef unsigned long size_t". 
+It means that this is an unsigned long data type, which expands to long unsigned int data type. 
